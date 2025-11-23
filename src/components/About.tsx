@@ -1,3 +1,5 @@
+import camilaProfile from "@/assets/camila-profile.jpg";
+
 const About = () => {
   return (
     <section id="sobre" className="py-20 md:py-32 bg-card">
@@ -6,6 +8,17 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-serif text-primary mb-6">
             Quem sou eu?
           </h2>
+
+          {/* Professional Photo */}
+          <div className="flex justify-center mb-8">
+            <div className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-primary shadow-elegant">
+              <img 
+                src={camilaProfile} 
+                alt="Camila Marques - Fundadora do M&C Beauty Salão"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
           
           <div className="space-y-6 text-lg md:text-xl text-foreground leading-relaxed">
             <p>

@@ -1,8 +1,16 @@
 import { Card } from "@/components/ui/card";
-import { ImageIcon } from "lucide-react";
+import portfolioNails1 from "@/assets/portfolio-nails-1.jpg";
+import portfolioNails2 from "@/assets/portfolio-nails-2.jpg";
+import portfolioHair1 from "@/assets/portfolio-hair-1.jpg";
+import portfolioHair2 from "@/assets/portfolio-hair-2.jpg";
 
 const Portfolio = () => {
-  const placeholders = Array.from({ length: 4 }, (_, i) => i);
+  const portfolioImages = [
+    { src: portfolioNails1, alt: "Esmaltação - M&C Beauty Salão" },
+    { src: portfolioNails2, alt: "Pé e mão - M&C Beauty Salão" },
+    { src: portfolioHair1, alt: "Corte + Matização da Cor - M&C Beauty Salão" },
+    { src: portfolioHair2, alt: "Corte Chanel reto - M&C Beauty Salão" }
+  ];
 
   return (
     <section id="portfolio" className="py-20 md:py-32 bg-card">
@@ -17,22 +25,19 @@ const Portfolio = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-          {placeholders.map((index) => (
+          {portfolioImages.map((image, index) => (
             <Card 
               key={index}
               className="bg-muted border-border overflow-hidden group hover-scale transition-smooth aspect-square"
               style={{ animationDelay: `${index * 100}ms` }}
             >
-              <div className="w-full h-full flex flex-col items-center justify-center p-8 text-center space-y-4">
-                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-smooth">
-                  <ImageIcon className="w-10 h-10 text-primary" />
-                </div>
-                <p className="text-muted-foreground text-lg">
-                  Adicionar foto do portfólio aqui
-                </p>
-                <p className="text-xs text-muted-foreground/60">
-                  Espaço {index + 1} de 4
-                </p>
+              <div className="w-full h-full relative overflow-hidden">
+                <img 
+                  src={image.src} 
+                  alt={image.alt}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </div>
             </Card>
           ))}
