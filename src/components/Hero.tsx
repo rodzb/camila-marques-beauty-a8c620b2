@@ -20,7 +20,7 @@ const Hero = () => {
               M&C Beauty Salão
             </h1>
             <p className="text-xl md:text-2xl text-secondary font-light tracking-wide">
-              com Camila Marques e Miriam Cossetti
+              Camila Marques e Miriam Cossetti
             </p>
           </div>
 
