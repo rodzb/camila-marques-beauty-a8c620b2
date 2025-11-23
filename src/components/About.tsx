@@ -67,10 +67,10 @@ const About = () => {
                 <h3 className="text-3xl font-serif text-primary">Miriam Cossetti</h3>
                 <p>
                   Olá! Eu sou a <span className="text-primary font-semibold">Miriam Cossetti</span>, 
-                  especialista em loiros, mechas e coloração profissional. Minha paixão pela beleza 
-                  começou há mais de uma década, e desde então venho me dedicando a estudar, 
-                  aperfeiçoar técnicas e transformar a autoestima das minhas clientes com resultados 
-                  naturais e personalizados.
+                  cofundadora do M&C Beauty Salão e especialista em loiros, mechas e coloração profissional. 
+                  Minha paixão pela beleza começou há mais de uma década, e desde então venho me dedicando 
+                  a estudar, aperfeiçoar técnicas e transformar a autoestima das minhas clientes com 
+                  resultados naturais e personalizados.
                 </p>
                 
                 <p>
