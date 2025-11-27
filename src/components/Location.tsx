@@ -40,8 +40,9 @@ const Location = () => {
                         Venha nos visitar
                       </h3>
                       <p className="text-lg text-foreground">
-                        📍 Rua Álvares Cabral 282<br />
-                        Porto Alegre – RS
+                        📍 Rua Álvares Cabral, 282<br />
+                        Bairro Cristo Redentor - Porto Alegre - RS<br />
+                        Edifício Veneza, Loja 1 - Térreo
                       </p>
                     </div>
                   </div>
@@ -53,7 +54,7 @@ const Location = () => {
 
                   <div className="pt-4">
                     <a
-                      href="https://www.google.com/maps/search/?api=1&query=Rua+Álvares+Cabral+282+Porto+Alegre+RS"
+                      href="https://www.google.com/maps/search/?api=1&query=Rua+Álvares+Cabral+282+Cristo+Redentor+Porto+Alegre+RS"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary hover:underline inline-flex items-center gap-2 transition-smooth"
